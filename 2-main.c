@@ -1,17 +1,19 @@
 #include <stdio.h>
 
-int main ()
+int main()
 {
-    int n=0;
-    printf("Input upper limit:\n");
-    scanf("%d", &n);
+    int password=0;
 
-    printf("Natural numbers from 1 to %d:\n", n);
+    printf("INICIO DEL PROGRAMA\n");
 
-    for(int i=n; i>=1; i--)
+    do
     {
-        printf("%d, ", i);
-    } 
+        printf("Ingrese un nuevo password\n");
+        scanf("%d", &password);
+    
+    } while (password!=1234);
+
+    printf("FIN DEL PROGRAMA\n");
 
     return(0);
 }

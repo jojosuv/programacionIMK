@@ -3,23 +3,19 @@
 int main ()
 {
     int n=0;
-    int suma=0;
-    int i=0;
+    int i=2;
 
     printf("Input upper limit:\n");
     scanf("%d", &n);
 
-    printf("Sum of natural numbers 1-%d:\n", n);
+    printf("Even numbers between 1 to %d:\n", n);
 
     do
     {
-
-        suma= suma+i;
-        i++;
+        printf("%d, ", i);
+        i=i+2;
 
     } while (i<=n);
-    
-    printf("%d\n", suma);
-    
+
     return(0);
 }

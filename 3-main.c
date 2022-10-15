@@ -1,15 +1,20 @@
 #include <stdio.h>
 
-int main ()
+int main()
 {
-    printf("Alphabets:\n");
+    int a=0;
+    int pass=0;
 
-    for(int i=65; i<=90; i++)
+    printf("ingrese password\n");
+    scanf("%d", &pass);
+
+    while (pass>0)
     {
+        pass= pass/10;
+        a++;
+    }
 
-        printf("%c, ", i);
-
-    } 
-
+    printf("el numero de digitos de %d\n", a);
+    
     return(0);
 }

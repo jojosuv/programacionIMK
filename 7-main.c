@@ -2,20 +2,17 @@
 
 int main ()
 {
-    int n=0;
-    int suma=0;
+    int i=65;
 
-    printf("Input upper limit:\n");
-    scanf("%d", &n);
+    printf("Alphabets:\n");
 
-    printf("Sum of odd numbers between 1 to %d:\n", n);
-
-    for(int i=1; i<=n; i=i+2)
+    do
     {
-        suma=suma+i;
-    } 
 
-    printf("%d\n", suma);
+        printf("%c, ", i);
+        i++;
+
+    } while (i<=90);
 
     return(0);
 }

@@ -4,22 +4,20 @@ int main ()
 {
     int n=0;
     int suma=0;
-    int i=0;
+    int i=1;
 
     printf("Input upper limit:\n");
     scanf("%d", &n);
 
-    printf("Sum of natural numbers 1-%d:\n", n);
+    printf("Sum of odd numbers between 1 to %d:\n", n);
 
-    do
+    while (i<=n)
     {
+        suma=suma+i;
+        i=i+2;
+    } 
 
-        suma= suma+i;
-        i++;
-
-    } while (i<=n);
-    
     printf("%d\n", suma);
-    
+
     return(0);
 }

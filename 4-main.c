@@ -1,17 +1,20 @@
 #include <stdio.h>
 
-int main ()
+int main()
 {
-    int n=0;
-    printf("Input upper limit:\n");
-    scanf("%d", &n);
+    int a=0;
+    int pass=0;
 
-    printf("Even numbers between 1 to %d:\n", n);
+    printf("ingrese password\n");
+    scanf("%d", &pass);
 
-    for(int i=2; i<=n; i=i+2)
+    do
     {
-        printf("%d, ", i);
-    } 
+        pass= pass/10;
+        a++;
+    } while (pass>0);
 
+    printf("el numero de digitos de %d\n", a);
+    
     return(0);
 }

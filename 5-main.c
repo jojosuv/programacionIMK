@@ -1,17 +1,22 @@
 #include <stdio.h>
 
-int main ()
+int main()
 {
-    int n=0;
-    printf("Input upper limit:\n");
+    int n;
+    int a=1;
+
+    printf("Input upper limit\n");
     scanf("%d", &n);
 
-    printf("Odd numbers between 1 to %d:\n", n);
+    printf("Natural numbers from 1 to %d\n", n);
 
-    for(int i=1; i<=n; i=i+2)
+    while (a<=n)
     {
-        printf("%d, ", i);
-    } 
+
+        printf("%d, ", a);
+        a++;
+
+    }
 
     return(0);
 }

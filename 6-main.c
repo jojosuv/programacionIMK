@@ -1,21 +1,26 @@
 #include <stdio.h>
 
-int main ()
+int main()
 {
-    int n=0;
+    int n;
+    int n2=0;
+    int n1=0;
     int suma=0;
-    printf("Input upper limit:\n");
+
+    printf("Input number\n");
     scanf("%d", &n);
 
-    printf("Sum of natural numbers 1-%d:\n", n);
+    n2=n%10;
 
-    for(int i=0; i<=n; i++)
+    while (n>=10)
     {
-
-        suma= suma+i;
-    } 
+        n= n/10;
+    }
     
-    printf("%d\n", suma);
+    n1=n;
+    suma=n1+n2;
+
+    printf ("%d", suma);
     
     return(0);
 }
