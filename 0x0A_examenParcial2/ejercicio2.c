@@ -11,7 +11,7 @@ float main ()
     char opcion;
 
     printf("Día de la semana: \n");
-    scanf("%c",&opcion);
+    scanf("%s",&opcion);
 
 
     printf ("A que hora fue:");
