@@ -219,6 +219,8 @@ int main()
         }
     }
     
+    printf ("\nBUSCAMINAS DE JOANA SUAREZ Y MIGUEL CANUL (EQUIPO)\n");
+
     while(1) 
     {
         
