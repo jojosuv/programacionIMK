@@ -17,7 +17,7 @@ int perder=0;
 int Minacols[10] = {};
 int Minafila[10] = {};
 int abrirEspacio = 0;
-char  alphabet[] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'}; 
+char  alphabet[] = {'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z', }; 
 
 void imprimirTablero(int tablero[FILA][COL], int visible[FILA][COL]) 
 {
@@ -194,7 +194,7 @@ int checar(char x)
     
     for (int i = 0; i < 26; i++) 
     {
-        if (toupper(alphabet[i]) == x)
+        if (toupper(x) == alphabet[i])
         {
             return(i+1);
                 
@@ -225,9 +225,9 @@ int main()
     {
         
         imprimirTablero(tablero, visible);
-        
-        printf("inserta una letra mayúscula porfis (dale enter) y el num (dale enter igual)");
-        scanf("%c %d", &letra, &col);
+         printf("\n");
+        printf("inserta una letra (dale enter) y el num (dale enter igual)");
+        scanf(" %c %d", &letra, &col);
         
         fila = checar(letra);
         
@@ -235,10 +235,13 @@ int main()
         {
             perder = 1;
             
+            printf("\n");
             printf("oh no que menso... pisaste una mina!!!\n");
-
+            printf("\n");
             verMina(tablero,visible,fila,col);
             imprimirTablero(tablero, visible);
+            printf("aqui estaban todas las minas\n");
+            
             
             exit(1);
             //break;
@@ -252,7 +255,10 @@ int main()
             {
                 imprimirTablero(tablero, visible);
                 printf("Felicidades no explotaste...!!!\n");
+                printf("\n");
                 printf("toma una flor como recompensa 8(>.<)8 ❀\n");
+                printf("\n");
+                printf("para salir...recoge tu flor y preciona enter...\n");
 
                 exit(1);
             }
